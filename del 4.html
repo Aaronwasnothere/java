@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="sv">   
+    
+    <head>        
+        
+        <meta charset="utf-8"> 
+        
+        <title>Summera flera tal</title>  
+        
+    </head>   
+    
+    <body> 
+        
+        <h1>Summera flera tal</h1>     
+        
+        <br><br>Summan av talen: <p id="talSumma"><p>  
+    
+    <script type="text/javascript">var tal, räknare, summa=0; 
+        
+   for(räknare=1;räknare<=2;räknare=räknare+1)
+   
+   {
+       tal=parseInt(prompt('Skriv in ett tal:'));
+    
+    summa=summa+tal;    } 
+        
+         
+   
+        
+        
+        document.getElementById("talSumma").innerHTML='Summan av talen='+summa; 
+        
+ 
+    
+    </script>    </body></html>

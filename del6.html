@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8"> 
+        
+        <title>tärningssimulator</title>  
+        
+        <style type="text/css">
+            div.tärning
+            {float:left;
+                width:32px;
+                background:#F5F5F5;
+                border:#999 1px solid;
+                padding:10px;
+                font-size:24px;
+                text-align:center;margin:5px;}
+        
+        </style>
+    </head> 
+    
+    <body>
+        
+        <div id="tning1" class="tärning">0</div><div id="tning2" class="tärning">0</div>
+        <button onmousedown="kastaTärning()">Kasta tärningen</button>
+        <h2 id="status" style="clear:left;">
+        </h2>
+        <script type="text/javascript">
+            
+            function kastaTärning(){var
+            
+        tning1=document.getElementById("tning1");
+                                    var tning2=document.getElementById("tning2");
+                                    var status=document.getElementById("status");
+                                    var t1=Math.floor(Math.random() * 6) +1;
+                                    var t2=Math.floor(Math.random() * 6) +1;
+                                    var total=t1+t2;tning1.innerHTML=t1;tning2.innerHTML=t2;status.innerHTML="Du fick " + total + ".";}
+            
+            
+        </script>
+    </body>
+</html>
